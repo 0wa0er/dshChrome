@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Harness 侧栏",
+  "version": "0.1.0",
+  "description": "在 Chrome 侧栏连接本地 DeepSeek Harness，按项目管理对话与网页引用。",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "打开 DeepSeek Harness"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsS1j/f+3xmoIj+akEiMNPtdeDb+i2QwrATLVHpHl6b06dANaQ3w65yoRTV+249Xr0BgsgDNMePefTNQOyRZK4jDizXBoceEtgVTGSzNOY2xWufqbFgN646ArBCKbFCzY1wpOBOaKCb33Lk6gGO1QT9hK23z3PJB37yfvZDaCEmSsZ2B152X827fhV8WEL6v+4zzFZHnv+ysztPVzcrpYlWksRtEP2ssMV7yj+V2hUNTL6j7Kyr1HH6LLiaanfYrmD6M/jo57q4CYi3NPgvmnBPUvdeCvbmcBo/8QZTvRAwnptZ9TibKBoQxsiYUQPHzKIxXUjrG4GW+bwUnWvxuR+wIDAQAB"
+}

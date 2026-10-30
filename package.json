@@ -1,0 +1,14 @@
+{
+  "name": "dsh-chrome",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness Chrome side panel and local companion bundle",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "main": "host/index.js",
+  "exports": { ".": "./host/index.js", "./cordis.patch.yml": "./cordis.patch.yml", "./package.json": "./package.json" },
+  "bin": { "dsh-chrome": "install/cli.js" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "files": ["host", "shared", "native", "install", "extension", "release.json", "cordis.patch.yml", "README.md"],
+  "scripts": { "test": "node --test tests/*.test.js", "check": "node scripts/check.mjs", "setup": "node install/cli.js setup" }
+}
